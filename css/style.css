@@ -13,7 +13,7 @@ font-family: 'Poppins', sans-serif;
 :root {
     --primary-dark: #15133c;
     --primary-light: #ff8c8c;
-    --bg-gray: #e9d5ca;
+    --bg-gray: #fcf3f3;
     --text-color: #4f4e58;
 }
 h1,
@@ -98,3 +98,40 @@ small {
     border-radius: 20px;
 }
 /* HERO CSS END */
+
+/* ABOUT CSS  */
+.about-text {
+    width: 80%;
+    margin-left: 20px;
+}
+.about-text h2 {
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 25px;
+    color: var(--primary-dark);
+}
+.about-text h3 {
+    font-size: 25px;
+    color: var(--primary-dark);
+    font-weight: 600;
+    padding-top: 10px;
+}
+/* ABOUT CSS END */
+
+/* Counter CSS  */
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 10px;
+    background-color: var(--bg-gray);
+}
+.counter h3 {
+    font-weight: 600;
+}
+.counter p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+/* Counter CSS END */
