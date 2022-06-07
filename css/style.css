@@ -16,7 +16,21 @@ font-family: 'Poppins', sans-serif;
     --bg-gray: #e9d5ca;
     --text-color: #4f4e58;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+}
 
+a,
+p,
+span,
+small {
+    font-family: "Poppins", sans-serif;
+}
 /* Header CSS  */
 /* .header-wrap {
     background-color: #f87;
@@ -52,3 +66,33 @@ font-family: 'Poppins', sans-serif;
 .navbar-nav .nav-item .nav-link:hover span::before {
     width: 100%;
 }
+
+/* HERO CSS */
+.hero-content-wrap {
+    height: 600px;
+}
+.hero-info-wrap {
+    height: 100%;
+}
+.hero-info {
+    width: 70%;
+}
+.hero-info span {
+    font-weight: 500;
+    color: var(--primary-light);
+}
+.hero-info h1 {
+    font-size: 60px;
+    font-weight: 900;
+    color: var(--primary-dark);
+}
+.hero-info p {
+    color: var(--text-color);
+}
+.hero-info p .buy-now-btn {
+    background-color: var(--primary-light);
+    color: #fff;
+    border: 1px solid var(--primary-light);
+    border-radius: 20px;
+}
+/* HERO CSS END */
