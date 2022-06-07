@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Charis+SIL:wght@400;700&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap");
+
+/* 
+font-family: 'Charis SIL', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --primary-dark: #15133c;
+    --primary-light: #ff8c8c;
+    --bg-gray: #e9d5ca;
+    --text-color: #4f4e58;
+}
+
+/* Header CSS  */
+/* .header-wrap {
+    background-color: #f87;
+} */
+.logo {
+    font-family: "Charis SIL", serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.logo span {
+    color: var(--primary-light);
+}
+.navbar-nav .nav-item .nav-link {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: var(--primary-dark);
+    padding: 5px 20px;
+}
+.navbar-nav .nav-item .nav-link span {
+    position: relative;
+    padding-bottom: 5px;
+}
+.navbar-nav .nav-item .nav-link span::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background-color: var(--primary-light);
+    transition: 0.3s all;
+}
+.navbar-nav .nav-item .nav-link:hover span::before {
+    width: 100%;
+}
