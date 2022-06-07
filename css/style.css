@@ -31,10 +31,12 @@ span,
 small {
     font-family: "Poppins", sans-serif;
 }
+.section-padding {
+    padding: 50px 0;
+}
+
 /* Header CSS  */
-/* .header-wrap {
-    background-color: #f87;
-} */
+
 .logo {
     font-family: "Charis SIL", serif;
     font-size: 2rem;
