@@ -315,3 +315,30 @@ small {
     background: var(--primary-light) !important;
 }
 /* Testimonial CSS END */
+
+/* Projects Section CSS */
+.book {
+    position: relative;
+}
+.book-details {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: #00000070;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+    opacity: 0;
+    transition: 0.3s all;
+}
+
+.book:hover .book-details {
+    opacity: 1;
+}
+.book:hover h4 {
+    opacity: 1;
+}
+/* Projects Section CSS END */
