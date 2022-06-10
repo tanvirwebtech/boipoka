@@ -1,3 +1,4 @@
+// Navigation Bar Fixed top
 const header = document.getElementById("header");
 document.addEventListener("scroll", () => {
     if (scrollY >= 10) {
@@ -8,10 +9,11 @@ document.addEventListener("scroll", () => {
     }
 });
 
+// Highlight Navlink according to sections
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".navbar-nav .nav-item .nav-link");
 
-window.addEventListener("scroll", () => {
+document.addEventListener("scroll", () => {
     let currentSection = "";
     sections.forEach((section) => {
         const sectionTop = section.offsetTop;
@@ -28,6 +30,7 @@ window.addEventListener("scroll", () => {
     });
 });
 
+// Owl Carousel
 $(document).ready(function () {
     $(".owl-carousel").owlCarousel({
         loop: true,
@@ -62,9 +65,11 @@ $(document).ready(function () {
     });
 });
 
+// Animation On Scroll
 AOS.init();
 const counterUp = window.counterUp.default;
 
+// Counter
 const callback = (entries) => {
     entries.forEach((entry) => {
         const el = entry.target;
@@ -85,5 +90,3 @@ for (const cls of counterClasses) {
     const el = document.querySelector(cls);
     IO.observe(el);
 }
-// const bl = document.querySelector(".counter2");
-// IO.observe(bl);
