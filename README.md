@@ -13,4 +13,4 @@ Created with:
 - Fully Responsive
 - Scroll Spy
 - Slider
-- Highlight navlink according to sections
+- Highlight navlinks according to sections
