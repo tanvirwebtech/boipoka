@@ -1,3 +1,33 @@
+const header = document.getElementById("header");
+document.addEventListener("scroll", () => {
+    if (scrollY >= 10) {
+        header.classList.add("header-fixed");
+    }
+    if (scrollY < 10) {
+        header.classList.remove("header-fixed");
+    }
+});
+
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".navbar-nav .nav-item .nav-link");
+
+window.addEventListener("scroll", () => {
+    let currentSection = "";
+    sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const clientHeight = section.clientHeight;
+        if (scrollY >= sectionTop - clientHeight / 3) {
+            currentSection = section.getAttribute("id");
+        }
+    });
+    navLinks.forEach((navLink) => {
+        navLink.classList.remove("active");
+        if (navLink.classList.contains(currentSection)) {
+            navLink.classList.add("active");
+        }
+    });
+});
+
 $(document).ready(function () {
     $(".owl-carousel").owlCarousel({
         loop: true,

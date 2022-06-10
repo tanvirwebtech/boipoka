@@ -112,6 +112,9 @@
     .section-padding {
         padding: 25px 0;
     }
+    .effect {
+        display: none;
+    }
     .section-heading {
         padding-bottom: 30px;
     }
