@@ -9,7 +9,7 @@ Created with:
 - Bootstrap@5
 - jQuery 
 
-** Some Awesome Features of this landing page:- 
+### Some Awesome Features of this landing page:- 
 - Fully Responsive
 - Scroll Spy
 - Slider
