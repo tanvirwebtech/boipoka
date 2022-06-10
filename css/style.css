@@ -173,7 +173,7 @@ a {
 .navbar-nav .nav-item .nav-link:focus span::before {
     width: 100%;
 }
-.navbar-collapse.collapse.show .navbar-nav .nav-item {
+.navbar-collapse.collapse .navbar-nav .nav-item {
     text-align: center;
     padding: 5px 0;
 }
