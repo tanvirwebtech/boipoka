@@ -109,6 +109,9 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 575.98px) {
+    .section-padding {
+        padding: 25px 0;
+    }
     .section-heading {
         padding-bottom: 30px;
     }
@@ -159,6 +162,14 @@
     }
     #chapter-navigation {
         align-items: flex-start;
+    }
+    .chapter-details {
+        text-align: center;
+        margin: 30px 0;
+        padding: 20px;
+    }
+    .chapter-details h5 {
+        padding: 20px 0;
     }
     .author-details-wrap {
         margin-left: 0;
