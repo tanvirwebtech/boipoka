@@ -6,11 +6,19 @@ $(document).ready(function () {
         responsive: {
             0: {
                 items: 1,
-                nav: true,
+                nav: false,
+                loop: true,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 1500,
             },
             600: {
                 items: 2,
-                nav: true,
+                nav: false,
+                loop: true,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 1500,
             },
             1000: {
                 items: 3,
@@ -23,3 +31,5 @@ $(document).ready(function () {
         },
     });
 });
+
+AOS.init();

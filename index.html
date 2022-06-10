@@ -4,14 +4,22 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://kit.fontawesome.com/5385bd0719.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css
 "
         />
+
         <link rel="stylesheet" href="./css/owl.carousel.min.css" />
         <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
         <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/responsive.css" />
         <title>Boipoka</title>
     </head>
 
@@ -34,7 +42,8 @@
                                 aria-expanded="false"
                                 aria-label="Toggle navigation"
                             >
-                                <span class="navbar-toggler-icon"></span>
+                                <!-- <span class="navbar-toggler-icon"></span> -->
+                                <i class="fa-solid fa-bars"></i>
                             </button>
                             <div
                                 class="collapse navbar-collapse"
@@ -91,6 +100,12 @@
         <!-- Hero Section  -->
 
         <section class="hero" id="hero">
+            <!-- effect start -->
+            <div class="effect-wrapper">
+                <div class="effect"><i class="fa-solid fa-plus"></i></div>
+                <div class="effect"><i class="fa-regular fa-circle"></i></div>
+            </div>
+            <!-- effect end -->
             <div class="hero-section">
                 <div class="container">
                     <div class="hero-content-wrap">
@@ -99,7 +114,11 @@
                                 <div
                                     class="hero-info-wrap d-flex align-items-center justify-content-center"
                                 >
-                                    <div class="hero-info">
+                                    <div
+                                        class="hero-info"
+                                        data-aos="zoom-in"
+                                        data-aos-duration="1500"
+                                    >
                                         <span
                                             >Best Seller Book Of The Week</span
                                         >
@@ -115,7 +134,7 @@
                                         <p>
                                             <a
                                                 href="#"
-                                                class="buy-now-btn btn px-4 py-2"
+                                                class="buy-now-btn btn px-md-4 py-md-2 px-sm-3 py-sm-2 px-2 py-1"
                                                 >Buy Now For $22.78</a
                                             >
                                         </p>
@@ -142,49 +161,49 @@
         <!-- Hero Section END -->
 
         <!-- Partners Section  -->
-        <section id="partners" class="section-padding">
+        <section id="partners" data-aos="fade-up" class="section-padding">
             <div class="container">
                 <div class="row">
                     <div class="col-lg col-md-4 col-sm-6 col-10">
-                        <div class="partner">
+                        <div class="partner text-center">
                             <img
-                                class="w-100"
+                                class="w-md-100 w-sm-75 w-50"
                                 src="./assets/logos/microsoft.jpg"
                                 alt=""
                             />
                         </div>
                     </div>
                     <div class="col-lg col-md-4 col-sm-6 col-10">
-                        <div class="partner">
+                        <div class="partner text-center">
                             <img
-                                class="w-100"
+                                class="w-md-100 w-sm-75 w-50"
                                 src="./assets/logos/android.jpg"
                                 alt=""
                             />
                         </div>
                     </div>
                     <div class="col-lg col-md-4 col-sm-6 col-10">
-                        <div class="partner">
+                        <div class="partner text-center">
                             <img
-                                class="w-100"
+                                class="w-md-100 w-sm-75 w-50"
                                 src="./assets/logos/google.jpg"
                                 alt=""
                             />
                         </div>
                     </div>
                     <div class="col-lg col-md-4 col-sm-6 col-10">
-                        <div class="partner">
+                        <div class="partner text-center">
                             <img
-                                class="w-100"
+                                class="w-md-100 w-sm-75 w-50"
                                 src="./assets/logos/adobe.jpg"
                                 alt=""
                             />
                         </div>
                     </div>
                     <div class="col-lg col-md-4 col-sm-6 col-10">
-                        <div class="partner">
+                        <div class="partner text-center">
                             <img
-                                class="w-100"
+                                class="w-md-100 w-sm-75 w-50"
                                 src="./assets/logos/airbnb.jpg"
                                 alt=""
                             />
@@ -200,7 +219,11 @@
             <div class="container">
                 <div class="row g-4">
                     <div class="col-lg-6 col-md-6 col-12">
-                        <div class="about-img">
+                        <div
+                            class="about-img"
+                            data-aos="zoom-in-right"
+                            data-aos-duration="1500"
+                        >
                             <img
                                 src="./assets/images/book-about.jpg"
                                 alt=""
@@ -209,7 +232,11 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-12">
-                        <div class="about-text">
+                        <div
+                            class="about-text"
+                            data-aos="fade-up"
+                            data-aos-duration="2000"
+                        >
                             <h2>About The Book</h2>
                             <p>
                                 A small river named Duden flows by their place
@@ -249,7 +276,7 @@
         <!-- Counter Section  -->
         <section id="counter" class="section-padding">
             <div class="container">
-                <div class="row">
+                <div class="row g-3">
                     <div class="col-lg-3 col-md-3 col-sm-6 col-12">
                         <div class="counter">
                             <h3>1205+</h3>
@@ -457,6 +484,7 @@
             </div>
         </section>
         <!-- Chapter Section END -->
+
         <!-- Service Section  -->
         <section id="service" class="section-padding">
             <div class="container">
@@ -467,7 +495,11 @@
                 <div class="services">
                     <div class="row">
                         <div class="col-md-4 col-sm-6 col-12">
-                            <div class="sercvice">
+                            <div
+                                class="service"
+                                data-aos="fade-up"
+                                data-aos-duration="1000"
+                            >
                                 <div class="service-content">
                                     <div class="icon text-center">
                                         <img
@@ -489,16 +521,20 @@
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6 col-12">
-                            <div class="sercvice">
+                            <div
+                                class="service"
+                                data-aos="fade-up"
+                                data-aos-duration="1500"
+                            >
                                 <div class="service-content">
                                     <div class="icon text-center">
                                         <img
-                                            src="./assets/icons/user-experience.png"
+                                            src="./assets/icons/marketing.png"
                                             alt="icon1"
                                         />
                                     </div>
                                     <div class="service-title text-center">
-                                        <h4>Experience</h4>
+                                        <h4>Marketing</h4>
                                     </div>
                                     <div class="service-des text-center">
                                         <p>
@@ -511,16 +547,20 @@
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6 col-12">
-                            <div class="sercvice">
+                            <div
+                                class="service"
+                                data-aos="fade-up"
+                                data-aos-duration="2000"
+                            >
                                 <div class="service-content">
                                     <div class="icon text-center">
                                         <img
-                                            src="./assets/icons/user-experience.png"
+                                            src="./assets/icons/vision.png"
                                             alt="icon1"
                                         />
                                     </div>
                                     <div class="service-title text-center">
-                                        <h4>Experience</h4>
+                                        <h4>Targeting Vision</h4>
                                     </div>
                                     <div class="service-des text-center">
                                         <p>
@@ -799,23 +839,71 @@
         <!-- Author Section  -->
 
         <section id="author" class="section-padding">
-            <div class="conatiner">
+            <div class="container">
                 <div class="author-content">
                     <div class="row">
                         <div class="col-md-6 col-sm-12 col-12">
-                            <div class="author-img">
-                                <img src="./assets/images/author.jpg" alt=" " />
+                            <div class="author-img" data-aos="fade-right">
+                                <img
+                                    src="./assets/images/author.jpg"
+                                    alt=" "
+                                    class="w-100"
+                                />
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-12 col-12">
-                            <div class="author-details">
-                                <span>Know More About The Author</span>
-                                <h2>Franklin Henderson</h2>
-                                <p>
-                                    A small river named Duden flows by their
-                                    place and supplies it with the necessary
-                                    regelialia.
-                                </p>
+                            <div class="author-details-wrap" data-aos="fade-up">
+                                <div class="author-details">
+                                    <span class="small-heading"
+                                        >Know More About The Author</span
+                                    >
+                                    <h2>Franklin <br />Henderson</h2>
+                                    <p>
+                                        A small river named Duden flows by their
+                                        place and supplies it with the necessary
+                                        regelialia.
+                                    </p>
+                                    <ul>
+                                        <li class="author-list d-flex">
+                                            <span>Name:</span>
+                                            <span>Franklin Henderson</span>
+                                        </li>
+                                        <li
+                                            class="author-list d-flex text-left"
+                                        >
+                                            <span>Date of birth:</span>
+                                            <span>November 28, 1980</span>
+                                        </li>
+                                        <li class="author-list d-flex">
+                                            <span>Address:</span>
+                                            <span
+                                                >San Francisco CA 97987
+                                                USA</span
+                                            >
+                                        </li>
+                                        <li class="author-list d-flex">
+                                            <span>Zip code:</span>
+                                            <span>1000</span>
+                                        </li>
+                                        <li class="author-list d-flex">
+                                            <span>Email:</span>
+                                            <span
+                                                >franklinsample@gmail.com</span
+                                            >
+                                        </li>
+                                        <li class="author-list d-flex">
+                                            <span>Phone:</span>
+                                            <span>+1-2234-5678-9-0</span>
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        <a
+                                            href=""
+                                            class="btn all-books-btn px-4 py-2"
+                                            >120 All Books</a
+                                        >
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -824,9 +912,258 @@
         </section>
         <!-- Author Section END -->
 
+        <!-- Contact Section  -->
+        <section id="contact" class="section-padding">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <h2>Contact Me</h2>
+                    <p class="mt-md-4 mt-2 w-md-75 w-100 mx-auto">
+                        Far far away, behind the word mountains, far from the
+                        countries Vokalia and Consonantia
+                    </p>
+                </div>
+                <div class="contact-content">
+                    <div class="row g-3">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                            <div
+                                class="single-contact text-center"
+                                data-aos="fade-up"
+                                data-aos-duration="1000"
+                            >
+                                <div class="contact-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <h4>Address</h4>
+                                <p>
+                                    198 West 21th Street, Suite 721 New York NY
+                                    10016
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                            <div
+                                class="single-contact text-center"
+                                data-aos="fade-up"
+                                data-aos-duration="1500"
+                            >
+                                <div class="contact-icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <h4>Contact Number</h4>
+                                <p>+1245484845985</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                            <div
+                                class="single-contact text-center"
+                                data-aos="fade-up"
+                                data-aos-duration="2000"
+                            >
+                                <div class="contact-icon">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                </div>
+                                <h4>Email</h4>
+                                <p>contact@example.com</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                            <div
+                                class="single-contact text-center"
+                                data-aos="fade-up"
+                                data-aos-duration="2500"
+                            >
+                                <div class="contact-icon">
+                                    <i class="fa-solid fa-earth-americas"></i>
+                                </div>
+                                <h4>Website</h4>
+                                <p>www.mysite.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-n-form">
+                        <div class="map-n-form-wrap">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="map">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12692.226351214225!2d-77.89983777409051!3d37.31748724264714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b1805131e7edbd%3A0x12ea9f9a761187b3!2sScotts%20Fork%2C%20VA%2023002%2C%20USA!5e0!3m2!1sen!2sbd!4v1654840025163!5m2!1sen!2sbd"
+                                            width="100%"
+                                            height="450"
+                                            style="border: 0"
+                                            allowfullscreen=""
+                                            loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade"
+                                        ></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div
+                                        class="form-wrap d-flex align-items-center justify-content-center h-100"
+                                    >
+                                        <div class="form w-100 pe-md-4 p-3">
+                                            <form>
+                                                <div class="mb-3">
+                                                    <input
+                                                        type="text"
+                                                        class="form-control contact-input"
+                                                        id="name"
+                                                        placeholder="Full Name"
+                                                    />
+                                                </div>
+                                                <div class="mb-3">
+                                                    <input
+                                                        type="email"
+                                                        class="form-control contact-input"
+                                                        id="name"
+                                                        placeholder="email@example.com"
+                                                    />
+                                                </div>
+                                                <div class="mb-3">
+                                                    <input
+                                                        type="tel"
+                                                        class="form-control contact-input"
+                                                        id="exampleFormControlInput1"
+                                                        placeholder="Phone"
+                                                    />
+                                                </div>
+                                                <div class="mb-3">
+                                                    <input
+                                                        type="text"
+                                                        class="form-control contact-input"
+                                                        id="exampleFormControlInput1"
+                                                        placeholder="Subject"
+                                                    />
+                                                </div>
+                                                <div class="mb-3">
+                                                    <textarea
+                                                        class="form-control contact-input"
+                                                        id="exampleFormControlTextarea1"
+                                                        rows="3"
+                                                    ></textarea>
+                                                </div>
+                                                <div class="send-btn">
+                                                    <button
+                                                        type="submit"
+                                                        class="btn px-4 py-2 mt-3"
+                                                    >
+                                                        Send Message
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section END -->
+
+        <!-- Footer  -->
+        <footer id="footer" class="section-padding">
+            <div class="container">
+                <div class="footer-columns">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-12">
+                            <div class="footer-about text-md-left text-center">
+                                <h5>About</h5>
+                                <p>
+                                    Far far away, behind the word mountains, far
+                                    from the countries Vokalia and Consonantia,
+                                    there live the blind texts
+                                </p>
+                                <div class="social-icons">
+                                    <a href=""
+                                        ><i class="fa-brands fa-facebook"></i
+                                    ></a>
+                                    <a href=""
+                                        ><i class="fa-brands fa-twitter"></i
+                                    ></a>
+                                    <a href=""
+                                        ><i
+                                            class="fa-brands fa-linkedin"
+                                        ></i></a
+                                    ><a href=""
+                                        ><i class="fa-brands fa-instagram"></i
+                                    ></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-12">
+                            <div class="footer-links text-md-left text-center">
+                                <h5>Links</h5>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Chapter</a></li>
+                                    <li><a href="#">Review</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-12">
+                            <div class="service-links text-md-left text-center">
+                                <h5>Service</h5>
+                                <div class="footer-links">
+                                    <ul>
+                                        <li><a href="#">Experience</a></li>
+                                        <li><a href="#">Marketing Goal</a></li>
+                                        <li>
+                                            <a href="#">Targeting Vision</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-12">
+                            <div
+                                class="footer-contact text-md-left text-center"
+                            >
+                                <h5>Have a question</h5>
+                                <ul>
+                                    <li>
+                                        <span>
+                                            <i
+                                                class="fa-solid fa-location-dot"
+                                            ></i
+                                        ></span>
+                                        <span
+                                            >203 Fake St. Mountain View, San
+                                            Francisco, California, USA</span
+                                        >
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <i class="fa-solid fa-phone"></i
+                                        ></span>
+                                        <span>+2 392 3929 210</span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <i
+                                                class="fa-solid fa-paper-plane"
+                                            ></i
+                                        ></span>
+                                        <span>mail@example.com</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright text-center">
+                    <p>Copyright &copy; 2022 All rights reserved</p>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer END -->
+
         <script src="./js/jquery-3.6.0.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
         <script src="./js/owl.carousel.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script src="./js/index.js"></script>
     </body>
 </html>
